@@ -2,7 +2,7 @@
   <header>
     <div class="centerpiece-wrapper">
       <div class="centerpiece">
-        <img src="../assets/seals.JPG" alt="Sili" class="seal-image">
+        <img src="../assets/Main.jpg" alt="Sili" class="seal-image">
         <div class="seal-name">SILI</div>
       </div>
       <div class="icon-wrapper">
