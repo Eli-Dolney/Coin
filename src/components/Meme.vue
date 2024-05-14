@@ -1,11 +1,15 @@
 <template>
-    <section id="image-rotator-section">
-      <h2>Sili Memes</h2>
-      <div class="image-rotator">
-        <img :src="currentImage" alt="Description of the image">
+  <section id="meme">
+    <div class="section-wrapper">
+      <div class="container">
+        <h1>Sili Memes</h1>
+        <div class="image-rotator">
+          <img :src="currentImage" alt="Description of the image">
+        </div>
       </div>
-    </section>
-  </template>
+    </div>
+  </section>
+</template>
 
 <script>
 // Importing multiple images

@@ -90,5 +90,6 @@ export default {
 
 .copy-address:hover {
   text-decoration: underline;
+  color: #7C05F2;
 }
 </style>

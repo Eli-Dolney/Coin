@@ -70,7 +70,7 @@
   color: black;
   text-align: center;
   width: 100%;
-  background-color: aqua;
+  background-color: rgba(0, 0, 255, 0.5); /* Aqua with 50% opacity */
   margin-top: 20px; /* Optionally add some top margin */
 }
 

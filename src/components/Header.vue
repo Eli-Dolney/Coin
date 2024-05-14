@@ -1,7 +1,10 @@
 <template>
   <header>
     <div class="centerpiece-wrapper">
-      <Centerpiece />
+      <div class="centerpiece">
+        <img src="../assets/seals.JPG" alt="Sili" class="seal-image">
+        <div class="seal-name">SILI</div>
+      </div>
       <div class="icon-wrapper">
         <a class="link" href="https://t.me/+7eKEmr1ia59lZTYx" target="_blank">
           <font-awesome-icon :icon="['fab', 'telegram']" size="4x" class="large-icon" />
@@ -15,28 +18,24 @@
 </template>
 
 <script>
-import Centerpiece from './Centerpiece.vue';
-
 export default {
   name: 'Header',
-  components: {
-    Centerpiece,
-  }
 };
 </script>
-
 
 <style scoped>
 header {
   background-image: url("../assets/header.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; /* Center the background image */
+  background-position: center;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  position: relative;
+  height: 100vh; /* Full viewport height for proper centering */
 }
 
 .centerpiece-wrapper {
@@ -44,11 +43,33 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  position: relative;
+  z-index: 2; /* Ensure it's above the background */
+}
+
+.centerpiece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seal-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.seal-name {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
 }
 
 .icon-wrapper {
   display: flex;
-  gap: 20px; /* Add space between icons */
+  gap: 20px;
 }
 
 .link {
@@ -56,15 +77,31 @@ header {
 }
 
 .link:hover {
-  transform: scale(1.1); /* Scale icons on hover to indicate interactivity */
+  transform: scale(1.1);
 }
 
 .large-icon {
-  color: white; /* Set the icon color */
-  cursor: pointer; /* Change cursor to pointer to indicate clickable */
+  color: white;
+  cursor: pointer;
 }
 
-h2{
-  color: #30A8F2;
+@media (max-width: 768px) {
+  header {
+    background-image: none; /* Hide the background image on mobile */
+    height: auto; /* Adjust height for mobile */
+    padding: 20px 0;
+  }
+
+  .seal-image {
+    width: 100px; /* Adjust size for mobile */
+  }
+
+  .seal-name {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+
+  .icon-wrapper {
+    display: none; /* Hide icons on mobile */
+  }
 }
 </style>
