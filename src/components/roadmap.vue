@@ -44,7 +44,7 @@ export default {
         { 
           title: 'Phase Four: Long-term Sustainability and Growth', 
           description: 'In this phase, we as a community continue to share memes and take $sili to the moon.',
-          items: ['Twitter/X Marketing', 'DEXScreener and BirdEye Update', 'Build Our Community'] 
+          items: ['Focus on TG: Boost Telegram activity and membership.', 'Influencer Collaborations: Partner with crypto influencers.', 'CoinGecko & CoinMarketCap: Apply for token listings.'] 
         }
       ],
       visiblePhases: [false, false, false, false]
