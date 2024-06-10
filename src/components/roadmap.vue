@@ -27,23 +27,23 @@ export default {
     const state = reactive({
       phases: [
         { 
-          title: 'Phase 1', 
+          title: 'Phase One: Foundation and Community Building', 
           description: 'This phase focuses on launching the project and setting up the foundational elements.',
-          items: ['Launch on Solana', 'Website Landing Page', 'Marketing'] 
+          items: ['Community Takeover: Transfer control and communicate plans.', 'TG Portal: Set up and manage a Telegram group', 'Dexscreener Update: Update token info for transparency.','Twitter Account: Create and maintain a Twitter account.'] 
         },
         { 
-          title: 'Phase 2', 
-          description: 'In this phase, we expand our reach through targeted marketing and community building.',
-          items: ['Twitter/X Marketing', 'DEXScreener and BirdEye Update', 'Build Our Community'] 
+          title: 'Phase Two: Engagement and Awareness', 
+          description: 'In this phase, we expand our reach through targeted marketing and community building events.',
+          items: ['Airdrop: Distribute tokens to attract users.', 'Meme Creation: Encourage community-driven meme sharing.', 'Website Launch: Finalize and launch the official website.'] 
         },
         { 
-          title: 'Phase 3', 
-          description: 'In this phase, we expand our reach through targeted marketing and community building.',
-          items: ['Twitter/X Marketing', 'DEXScreener and BirdEye Update', 'Build Our Community'] 
+          title: ' Phase Three: Expansion and Development', 
+          description: 'In this phase, we focus on building a strong team and community behind Sili.',
+          items: ['Establish Raid Team: Coordinate social media activities.', 'Dextools & BirdEye Updates: Keep token info current.', 'More Memes: Continue meme promotion and contests.'] 
         },
         { 
-          title: 'Phase 4', 
-          description: 'In this phase, we expand our reach through targeted marketing and community building.',
+          title: 'Phase Four: Long-term Sustainability and Growth', 
+          description: 'In this phase, we as a community continue to share memes and take $sili to the moon.',
           items: ['Twitter/X Marketing', 'DEXScreener and BirdEye Update', 'Build Our Community'] 
         }
       ],
